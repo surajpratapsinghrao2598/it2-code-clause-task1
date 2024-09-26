@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Clause Task 1 - Countdown Timer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="my-5">Code Clause Task 1 - Countdown Timer</h1>
+        <div id="countdown" class="d-flex justify-content-center">
+            <div id="days" class="mx-2">
+                <i class="fas fa-calendar-day"></i>
+                <span></span>
+            </div>
+            <div id="hours" class="mx-2">
+                <i class="fas fa-clock"></i>
+                <span></span>
+            </div>
+            <div id="minutes" class="mx-2">
+                <i class="fas fa-hourglass-half"></i>
+                <span></span>
+            </div>
+            <div id="seconds" class="mx-2">
+                <i class="fas fa-stopwatch"></i>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Date Input -->
+    <div class="modal fade" id="dateModal" tabindex="-1" role="dialog" aria-labelledby="dateModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dateModalLabel">Set Countdown Date</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="countdown-date">Enter the date for countdown:</label>
+                    <input type="datetime-local" id="countdown-date" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="start-countdown">Start Countdown</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
